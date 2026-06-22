@@ -45,10 +45,27 @@
      <h2>meu primeiro post</h2>
 <p class="artigo-autor">por: Larissa de Oliveira</p>
 <P>boas vindas a meu novo blog! aqui compartilharei atualização sobre o palmeiras</P>
-<button>❤  0</button>
+<button>❤  <span>0</span></button>
+<button>👍 <span>0</span></button>
+<button>👎 <span>0</span></button>
 </div>
 
 
 </main>
 </body>
+<script>
+    const botoes  = document.querySelector("button");
+
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoClicado);
+ function botaoClicado(){
+        console.log("fui clicado");
+        let text = botao.querySelector("span");
+        text.textContent++;
+       }
+    } )
+    
+
+   
+</script>
 </html>
