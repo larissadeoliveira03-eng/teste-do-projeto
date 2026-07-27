@@ -6,39 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog</title>
-    <style>
-        header {
-            background-color: #53fc05;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-            border: 5px solid black;
-        }
-
-        main {
-            background-color: #FFFFFF;
-            color: #070707;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-           
-        }
-article{
-display: flex;
-}
-        img {
-            width: 130px;
-            height: 130px;
-        }
-
-        .artigo-autor {
-
-            font-weight: bold;
-        }
-    </style>
+   <link rel = "stylesheet" href="style.css"> 
 </head>
 
 <body>
@@ -47,7 +15,8 @@ display: flex;
         <p>vou compartilhar algumas coisas sobre o palmeiras</p>
     </header>
     <main>
-        <article>  <img src="Fz174kgWAAAMlAE-1.jpg"
+        <article> 
+             <img src="Fz174kgWAAAMlAE-1.jpg"
             alt="Ilustração digital com fundo verde escuro e o escudo do Palmeiras ao centro. Acima do escudo, o texto em branco Sociedade Esportiva Palmeiras acompanha a curvatura do símbolo. Abaixo, está escrita a palavra em letras maiúsculas e fonte estilizada. ">
         <div>
             <h2>meu primeiro post</h2>
@@ -57,9 +26,9 @@ display: flex;
             <button>👍 <span>0</span></button>
             <button>👎 <span>0</span></button>
         </div>
-     </article>
+    </article>
       <article>
-        <img src="Fz174kgWAAAMlAE-1.jpg"
+        <img src="360456885-escudo-do-palmeiras-4.webp"
         alt="Ilustração digital com fundo verde escuro e o escudo do Palmeiras ao centro. Acima do escudo, o texto em branco Sociedade Esportiva Palmeiras acompanha a curvatura do símbolo. Abaixo, está escrita a palavra em letras maiúsculas e fonte estilizada. ">
     <div>
         <h2>meu segundo post</h2>
@@ -70,30 +39,18 @@ display: flex;
         <button>👎 <span>0</span></button>
     </div>
 </article>
+<article>
+    <img src="palmeiras e corinthias (1).jpg"
+    alt="Ilustração digital com fundo verde escuro e o escudo do Palmeiras ao centro juntamente com o do corinthias. Acima do escudo, o texto em branco Sociedade Esportiva Palmeiras acompanha a curvatura do símbolo. Abaixo, está escrita a palavra em letras maiúsculas e fonte estilizada. ">
+    <h2>meu sterceiro post</h2
+    <p class="artigo-autor">por: Larissa de Oliveira</p>
+    <P>novas atualização palmeiras em 2026 esta participando de alguns campeonatos o que esta na frente com 44 pontos e o brasileirão.</P>
+    <button>❤ <span>0</span></button>
+    <button>👍 <span>0</span></button>
+    <button>👎 <span>0</span></button>
+</div>
+</article>
     </main>
+    <script src="script.js"></script> </script>
 </body>
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let text = botao.querySelector("span");
-            if ( curtiu === false){
-                text.textContent++;
-                curtiu = true;
-            } else {
-                text.textContent--;
-                curtiu = false;
-            }
-           
-        }
-    })
-
-
-
-</script>
-
 </html>
