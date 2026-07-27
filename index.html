@@ -64,7 +64,7 @@ display: flex;
     <div>
         <h2>meu segundo post</h2>
         <p class="artigo-autor">por: Larissa de Oliveira</p>
-        <P>boas vindas a meu novo blog! aqui compartilharei atualização sobre o palmeiras</P>
+        <P>novas atualização palmeiras em 2026 esta participando de alguns campeonatos o que esta na frente com 44 pontos e o brasileirão.</P>
         <button>❤ <span>0</span></button>
         <button>👍 <span>0</span></button>
         <button>👎 <span>0</span></button>
@@ -83,7 +83,10 @@ display: flex;
             let text = botao.querySelector("span");
             if ( curtiu === false){
                 text.textContent++;
-                curtiu = true
+                curtiu = true;
+            } else {
+                text.textContent--;
+                curtiu = false;
             }
            
         }
