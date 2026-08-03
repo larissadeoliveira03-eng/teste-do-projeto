@@ -1,28 +1,37 @@
+body { 
+    max-width: 100vw;
+}
+
 header {
     background-color: #53fc05;
     color: #FFFFFF;
     text-align: center;
-    max-width: 1000px;
-    margin: 10 auto;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 16px;
     border: 5px solid black;
 }
 
 main {
     background-color: #FFFFFF;
     color: #070707;
-    text-align: center;
-    max-width: 800px;
-    margin: 10 auto;
-    padding: 16px;
-   
+    margin: 50px auto;
+    padding: 0px;
+   display: flex;
+   flex-wrap: wrap;
 }
 article{
 display: flex;
+flex: 1 1 25%;
+justify-content: center;
+text-align: center;
+margin: 16px;
+gap: 16px;
+padding: 16px;
+border: 1px solid #183C63;
 }
 img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
 }
 
 .artigo-autor {
