@@ -1,10 +1,24 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #000000;
+    --cor-fundo: #151428;
+    --cor-texto: #fcfbff;
+    --cor-contraste: #FFFFFF;
+}
+.tema-escuro {
+    --cor-primaria: #000000; /* Um azul escuro para o cabeçalho no modo escuro */
+    --cor-secundaria: #ffffff; /* Uma cor para links e detalhes no modo escuro */
+    --cor-fundo: #151428; /* Fundo escuro */
+    --cor-texto: #ffffff; /* Texto claro */
+    --cor-contraste: #c9e3ff; /* Cor de contraste para o cabeçalho no modo escuro */
+}
 body { 
     max-width: 100vw;
 }
 
 header {
-    background-color: #53fc05;
-    color: #FFFFFF;
+    background-color: var(--cor-primaria);
+    color: var(--cor-contraste);
     text-align: center;
     margin: 0 auto;
     padding: 16px;
@@ -12,8 +26,8 @@ header {
 }
 
 main {
-    background-color: #FFFFFF;
-    color: #070707;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
     margin: 50px auto;
     padding: 0px;
    display: flex;
@@ -27,7 +41,7 @@ text-align: center;
 margin: 16px;
 gap: 16px;
 padding: 16px;
-border: 1px solid #183C63;
+border: 1px solid var(--cor-primaria);
 }
 img {
     width: 100px;
