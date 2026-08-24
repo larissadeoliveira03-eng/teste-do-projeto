@@ -15,4 +15,11 @@ botoes.forEach(function (botao) {
         }
        
     }
-})
+}) 
+const btnTema = document.getElementById('btn-tema');
+const body = document.body;
+
+btnTema.addEventListener('click', () => {
+    body.classList.toggle('tema-escuro');
+    body.classList.toggle('tema-claro');
+});
