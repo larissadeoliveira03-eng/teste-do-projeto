@@ -112,3 +112,56 @@
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     }
+   
+/* Botão de Like */
+.btn-like {
+    background-color: transparent;
+    border: 2px solid #ff4757;
+    color: #ff4757;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.btn-like:hover {
+    background-color: rgba(255, 71, 87, 0.1);
+}
+
+.btn-like:active {
+    transform: scale(0.95);
+}
+
+.btn-like.curtido {
+    background-color: #ff4757;
+    color: #ffffff;
+}
+
+/* Botão Flutuante de Tema */
+.bnt-tema-escuro {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-contraste);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.bnt-tema-escuro:hover {
+    transform: scale(1.1);
+}
